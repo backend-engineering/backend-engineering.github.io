@@ -6,7 +6,7 @@
 <body>
 <script>
     var GoogleAuth;
-    var SCOPE = 'https://www.googleapis.com/auth/drive.metadata.readonly';
+    var SCOPE = 'https://www.googleapis.com/auth/calendar.events';
     function handleClientLoad() {
         // Load the API's client and auth2 modules.
         // Call the initClient function after the modules load.
@@ -22,9 +22,9 @@
         // Get API key and client ID from API Console.
         // 'scope' field specifies space-delimited list of access scopes.
         gapi.client.init({
-            'apiKey': 'YOUR_API_KEY',
+            // 'apiKey': 'YOUR_API_KEY',
             'discoveryDocs': [discoveryUrl],
-            'clientId': 'YOUR_CLIENT_ID',
+            'clientId': '532693435969-i812oakj81g242i6063gavt99sorsf2i.apps.googleusercontent.com',
             'scope': SCOPE
         }).then(function () {
             GoogleAuth = gapi.auth2.getAuthInstance();
